@@ -1,0 +1,30 @@
+class Dog
+
+	attr_accessor :name
+	attr_accessor :color
+
+	def initialize
+		@name = "Fido"
+		@color = "Red"
+	end
+
+	# def name
+	# 	@name
+	# end
+
+	# def name=(name)
+	# 	@name = name
+	# end
+
+	def speak
+		puts "Bark"
+	end
+end
+
+my_dog = Dog.new
+puts my_dog.name
+my_dog.name = "Jimmy"
+puts my_dog.name
+puts my_dog.color 
+my_dog.color = "Blue"
+puts my_dog.color
