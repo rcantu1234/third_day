@@ -12,12 +12,12 @@ class BlackJack
 		users_choice = gets.chomp
 
 		player_one.balance -= 10
-		puts "Your balance is: #{player_one.balance}"
+		puts "Your balance is: #{player_one.balance}" #Lines 16-39 don't need to be indented
 
 			card_one = @player_one.cards.draw
 			puts "Your cards are: #{card_one}"
 
-			while @player_one.cards.count > 0 do 
+			while @player_one.cards.count > 0 do #Lines 21, 22, and 24 should be indented
 			print "Do you want to hit (h) or stay (s)? "
 			users_choice = gets.chomp
 
